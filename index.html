@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kjøpt bil med feil eller mangler? Gratis vurdering | Bilsaker.no</title>
+<meta name="robots" content="noindex"><!-- UTKAST: fjernes når siden publiseres på bilsaker.no -->
+<meta name="description" content="Heving, reklamasjon og erstatning etter bilkjøp. Gratis og uforpliktende vurdering av saken din fra Resolve Partners Advokatfirma – 21 års erfaring med biltvister.">
+<link rel="canonical" href="https://bilsaker.no/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kjøpt bil med feil eller mangler? | Bilsaker.no">
+<meta property="og:description" content="Gratis og uforpliktende vurdering av bilsaken din. 21 års erfaring med biltvister.">
+<meta property="og:image" content="https://bilsaker.no/assets/hero-bil-1400.webp">
+<link rel="preload" as="image" href="assets/hero-bil-800.webp" imagesrcset="assets/hero-bil-800.webp 800w, assets/hero-bil-1400.webp 1400w" imagesizes="100vw" fetchpriority="high">
+
+<!-- Google tag (gtag.js) – samme konto og oppsett som på den gamle siden -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17188961666"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17188961666');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Bilsaker.no – Resolve Partners Advokatfirma",
+  "legalName": "Solve Advokatfirma AS",
+  "url": "https://bilsaker.no/",
+  "logo": "https://bilsaker.no/assets/resolve-partners.png",
+  "areaServed": "NO",
+  "knowsAbout": ["Heving av bilkjøp", "Reklamasjon bil", "Feil og mangler ved bilkjøp"]
+}
+</script>
+
+<style>
+:root{
+  --blue:#188bf6; --blue-dark:#0f6fd0; --ink:#111827; --muted:#4b5563;
+  --gray:#f5f5f5; --line:#e5e7eb; --yellow:#faf089; --orange:#f6ad55;
+  --card:rgba(17,24,39,.72); --radius:14px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue-dark)}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+
+/* Topp */
+.topbar{background:#fff;border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.topbar img{width:160px}
+.brandline{font-size:13px;color:var(--muted);text-align:right;line-height:1.3;white-space:nowrap}
+.brandline strong{display:block;color:var(--ink);font-size:16px}
+@media (min-width:720px){.topbar img{width:210px}.brandline{font-size:14px}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:#222}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero .wrap{position:relative;padding-top:40px;padding-bottom:48px}
+.hero-card{background:var(--card);color:#fff;border-radius:var(--radius);padding:24px 20px;max-width:580px}
+.hero h1{font-size:clamp(30px,6.4vw,46px);line-height:1.15;margin:0 0 10px;font-weight:600}
+.hero .sub{font-size:clamp(22px,4.6vw,30px);line-height:1.2;margin:0 0 18px}
+.hl{color:var(--yellow);font-weight:700}
+.hero .promise{font-size:19px;margin:0 0 8px}
+.checks{list-style:none;margin:0 0 22px;padding:0}
+.checks li{position:relative;padding-left:32px;margin:6px 0;font-size:18px}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border-radius:4px;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3.2 3.2L15 7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+
+/* Knapper */
+.btn{display:block;width:100%;border:0;border-radius:6px;background:var(--blue);color:#fff;font:inherit;font-size:22px;font-weight:700;padding:15px 18px;text-align:center;cursor:pointer;text-decoration:none;transition:background .15s}
+.btn:hover,.btn:focus-visible{background:var(--blue-dark)}
+.btn:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.cta-band{background:#d4dbe3;padding:18px 0}
+.cta-band .btn{max-width:560px;margin:0 auto}
+
+/* Seksjoner */
+section{padding:48px 0}
+.gray{background:var(--gray)}
+h2{color:var(--blue);font-size:clamp(26px,5vw,34px);line-height:1.2;text-align:center;margin:0 0 24px}
+.quote{text-align:center}
+.quote blockquote{margin:0 auto 12px;max-width:640px;color:var(--blue);font-size:clamp(24px,5.4vw,32px);font-style:italic;font-weight:700;line-height:1.3}
+.stars{width:150px;margin:0 auto 6px}
+.source{color:#4b5563;font-style:italic}
+
+.claims{position:relative;overflow:hidden;background:#2d3540}
+.claims > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.claims .wrap{position:relative}
+.claims .card{background:var(--card);color:#fff;border-radius:var(--radius);padding:24px 20px;max-width:580px}
+.claims h2{color:#fff;text-align:left;margin-bottom:6px}
+.claims ul{list-style:none;padding:0;margin:12px 0 20px}
+.claims li{position:relative;padding-left:30px;margin:8px 0}
+.claims li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M7 5l5 5-5 5' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.claims .seller{font-size:19px}
+.claims .seller b{color:var(--orange)}
+.claims .exp{font-size:clamp(26px,5.6vw,34px);line-height:1.2;margin:10px 0 0}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:8px;margin:0 0 12px}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;padding:16px 44px 16px 16px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq details p{margin:0;padding:0 16px 16px;color:var(--muted)}
+
+/* Anmeldelser */
+.reviews{display:grid;gap:16px}
+.review{background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.review p{margin:0 0 14px}
+.who{display:flex;align-items:center;gap:12px}
+.who img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.who b{display:block}
+.who span{color:#4b5563;font-size:14px}
+.review .stars{width:110px;margin:12px 0 0}
+
+/* Advokat */
+.lawyer{display:grid;gap:20px;align-items:center}
+.lawyer img{border-radius:10px;width:100%;max-width:420px;margin:0 auto}
+.lawyer h3{font-size:26px;margin:0}
+.lawyer .title{color:var(--muted);margin:0 0 10px}
+
+/* Fagstoff */
+.info h3{font-size:22px;margin:32px 0 8px}
+.info h4{font-size:18px;margin:22px 0 6px}
+.info p{margin:0 0 12px}
+
+/* Bunn */
+footer{background:#111827;color:#d1d5db;font-size:15px;padding:32px 0}
+footer strong{color:#fff}
+footer a{color:#fff}
+footer p{margin:0 0 6px}
+
+/* Skjema-popup */
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:flex-start;justify-content:center;background:rgba(17,24,39,.6)}
+.modal.open{display:flex}
+.modal-box{position:relative;background:#fff;width:100%;max-width:520px;height:100%;overflow:auto;padding:16px 16px 12px}
+.modal-close{position:absolute;top:8px;right:8px;width:40px;height:40px;border:0;border-radius:50%;background:#111827;color:#fff;font-size:24px;line-height:40px;cursor:pointer}
+.modal-box .logo{width:160px;margin:4px auto 12px}
+.progress{height:24px;border:2px solid var(--line);border-radius:14px;overflow:hidden;margin:0 0 12px}
+.progress div{width:78%;height:100%;background:repeating-linear-gradient(-45deg,var(--blue),var(--blue) 12px,#3a9ef8 12px,#3a9ef8 24px);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.modal h2{margin:0 0 4px;font-size:26px}
+.modal .lead{text-align:center;margin:0;font-size:16px;line-height:1.45}
+.modal iframe{width:100%;height:320px;border:0;display:block;margin-top:-30px}
+.modal .fine{text-align:center;color:#4b5563;font-size:13px;margin:0}
+
+@media (min-width:720px){
+  body{font-size:18px}
+  .hero .wrap{padding-top:72px;padding-bottom:80px}
+  .hero-card,.claims .card{padding:32px 32px}
+  .reviews{grid-template-columns:1fr 1fr}
+  .lawyer{grid-template-columns:1fr 1fr}
+  .modal{align-items:center}
+  .modal-box{border-radius:16px;height:auto;max-height:94vh;padding:22px 24px 18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <img src="assets/resolve-partners.png" width="520" height="120" alt="Resolve Partners Advokatfirma">
+    <div class="brandline"><strong>Bilsaker.no</strong>Advokathjelp, bilkjøp</div>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hovedtittel">
+  <img src="assets/hero-bil-800.webp" srcset="assets/hero-bil-800.webp 800w, assets/hero-bil-1400.webp 1400w" sizes="100vw" alt="" width="800" height="533" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-card">
+      <h1 id="hovedtittel">Kjøpt bil med <span class="hl">feil</span> eller <span class="hl">mangler</span>?</h1>
+      <p class="sub">Eller solgt bil og fått klage?</p>
+      <p class="promise">Få gratis advokathjelp i dag!</p>
+      <ul class="checks">
+        <li><span class="hl">Heving</span> av bilkjøpet</li>
+        <li>Reklamasjon</li>
+        <li>Kvalifiserte råd for veien videre</li>
+        <li><span class="hl">GRATIS</span> vurdering av din sak, helt uforpliktende</li>
+      </ul>
+      <button class="btn" type="button" data-open-form>Kontakt meg</button>
+    </div>
+  </div>
+</section>
+
+<section class="quote gray">
+  <div class="wrap">
+    <blockquote>«Fikk løst et problem som jeg ikke fikk løst via 5 andre advokatkontorer»</blockquote>
+    <img class="stars" src="assets/stjerner.svg" width="150" height="22" alt="5 av 5 stjerner">
+    <div class="source">Google-anmeldelse</div>
+  </div>
+</section>
+
+<section class="claims">
+  <img src="assets/radgivning-700.webp" alt="" width="700" height="1008" loading="lazy">
+  <div class="wrap">
+    <div class="card">
+      <h2>Du kan ha krav på erstatning!</h2>
+      <p>Eksempler på feil og mangler:</p>
+      <ul>
+        <li>Feil eller mangelfulle opplysninger fra selger</li>
+        <li>Problemer med motor eller girkasse</li>
+        <li>Rust og skjulte skader</li>
+        <li>Skadehistorikk som ikke ble opplyst</li>
+        <li>Feil kilometerstand</li>
+        <li>Elbil: feil på batteri, lading eller rekkevidde</li>
+        <li>Andre feil</li>
+      </ul>
+      <p class="seller">Eller har kjøper <b>klaget</b> på bilkjøpet?</p>
+      <p class="exp">Vi har <span class="hl">21 års erfaring</span> med biltvister!</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band"><div class="wrap"><button class="btn" type="button" data-open-form>Kontakt meg</button></div></div>
+
+<section class="faq gray">
+  <div class="wrap narrow">
+    <h2>Ofte stilte spørsmål</h2>
+    <details>
+      <summary>Hvorfor få hjelp av advokat?</summary>
+      <p>Har du en bilsak du ikke klarer å løse, kan det være lurt å få hjelp av advokat. Noen velger å løse bilsaker på egen hånd gjennom Forbrukerrådet og Forbrukerklageutvalget – noen lykkes med det, andre gjør det ikke. Forbrukerrådet tilbyr kun mekling, ikke bistand, og er mindre egnet for saker med større summer på spill. For de som ikke lykkes kan løpet være kjørt, og mulighetene for å gjøre feil er mange. Dessuten dekker bilforsikringen ofte omkring 80 % av advokatutgiftene.</p>
+    </details>
+    <details>
+      <summary>Hvilke kostnader kan jeg forvente?</summary>
+      <p>Omkring 80 % av advokatutgiftene dekkes dersom du har bilforsikring og betaler grunnandelen på 3 000–4 000 kr. Hvis du har reklamert til selger og kan dokumentere at kravet ditt ble avvist, hjelper vi deg å aktivere rettshjelpsdekningen din.</p>
+    </details>
+    <details>
+      <summary>Hvor lang tid tar det å komme i gang?</summary>
+      <p>Vi ringer deg i løpet av 0–24 timer etter at du har gitt oss telefonnummeret ditt. I samtalen gir vi vår vurdering av saken din, og vi kommer i gang så fort som mulig – helst i morgen, om du ønsker det.</p>
+    </details>
+  </div>
+</section>
+
+<div class="cta-band"><div class="wrap"><button class="btn" type="button" data-open-form>Kontakt meg</button></div></div>
+
+<section class="gray">
+  <div class="wrap narrow">
+    <h2>Dette er hvorfor mange velger oss</h2>
+    <div class="reviews">
+      <article class="review">
+        <p>Hadde en forsikringsak der de gjorde en kjempe jobb. Fikk god hjelp og saken min ble ordnet opp på en ryddig måte.</p>
+        <div class="who"><img src="assets/anmelder-andre.webp" width="48" height="48" alt="" loading="lazy"><div><b>Andre Glemmestad</b><span>Google-anmeldelse</span></div></div>
+        <img class="stars" src="assets/stjerner.svg" width="110" height="16" alt="5 av 5 stjerner" loading="lazy">
+      </article>
+      <article class="review">
+        <p>Anbefales, fikk bistand, råd og veiledning i komplisert sak etter funn av mangler ved kjøpet. Anbefales fremfor eierskifte forsikringer som drar saken langt uten løsning i sikte.</p>
+        <div class="who"><img src="assets/anmelder-arne.webp" width="48" height="48" alt="" loading="lazy"><div><b>Arne B.Hansen</b><span>Google-anmeldelse</span></div></div>
+        <img class="stars" src="assets/stjerner.svg" width="110" height="16" alt="5 av 5 stjerner" loading="lazy">
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band"><div class="wrap"><button class="btn" type="button" data-open-form>Kontakt meg</button></div></div>
+
+<section>
+  <div class="wrap narrow">
+    <h2>Møt Kristoffer</h2>
+    <div class="lawyer">
+      <img src="assets/kristoffer.webp" width="512" height="391" alt="Advokat Kristoffer Botilsrud" loading="lazy">
+      <div>
+        <h3>Kristoffer Botilsrud</h3>
+        <p class="title">Advokat, Resolve Partners Advokatfirma</p>
+        <p>[PLASSHOLDER: 2–3 setninger om Kristoffer – erfaring, fagfelt, og at han følger saken din selv. Fylles inn når vi har teksten.]</p>
+        <button class="btn" type="button" data-open-form>Kontakt meg</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info gray">
+  <div class="wrap narrow">
+    <h2>Nyttig informasjon</h2>
+
+    <h3>Heving av kjøp</h3>
+    <p>Et kjøretøy som har vært i bruk i flere år før det selges, og kanskje disponert av flere, kan naturlig nok ha fått skader. Sånn sett er det ikke forbausende med all konflikten. Men det er også mye som tyder på at kjøp og salg av bil er et område hvor etikken til folk ikke alltid er den beste.</p>
+    <p>Mange selger kjøretøy med feil som de vet om, og påfører dermed med viten og vilje et annet menneske et problem. Og så er det noen kjøpere som kjøper godt brukte kjøretøy og forventer at de skal være i akkurat like god stand som nye. Et kjøretøy koster også normalt mye penger, og det man har brukt mye penger på, tar man ikke lett på.</p>
+    <p>Heving av bilkjøp mellom private og heving av bilkjøp fra forhandler følger ulike regelverk. De vanligste fallgruvene på veien mot heving av et bilkjøp gjelder imidlertid i begge situasjoner.</p>
+
+    <h4>Reklamer i tide</h4>
+    <p>En «klassiker» er at det reklameres for sent, eller at det oppstår tvist om kravene til en reklamasjon er oppfylt. Rådet fra oss er å reklamere med det samme du oppdager en feil. Reklamer også om du er usikker på hva som er feil og hva omfanget er. Forklar i så fall hva symptomene er.</p>
+    <p>For å unngå tvil om du har reklamert eller ikke, bør du som minimum bruke ordet «reklamasjon» og henvende deg skriftlig. En muntlig reklamasjon kan du ikke bevise at er sendt. To–tre måneder fra du oppdaget eller burde ha oppdaget mangelen er det lengste du kan vente.</p>
+    <p>Kan det se ut som om du har vært for sent ute med å reklamere, trenger ikke alt håp å være ute. Ta kontakt, så gjør vi en gratis vurdering av om det fortsatt er en mulighet.</p>
+
+    <h4>Ikke rett feilen selv</h4>
+    <p>En annen fallgruve er at man forsøker å rette en feil selv, og så setter fram et krav om heving. Selger har etter loven rett til å forsøke å rette feilen selv, og trenger ikke godta heving i en slik situasjon.</p>
+    <p>Det er også grunn til å presisere at man ikke må akseptere et ønske fra selger om å reparere eller rette mangelen dersom man vil heve kjøpet. Heving må i så fall skje på bakgrunn av tilstanden etter reparasjonen.</p>
+    <p>Selgers rett til å forsøke å reparere er verdt å tenke på når man kjøper kjøretøy et annet sted i landet enn der man selv bor. Det kan bli kostbart med frakt gjennom hele landet for at selger skal få mulighet til å reparere.</p>
+    <p>Utgangspunktet er at selger har rett til å forsøke å rette samme feil to ganger før du kan kreve å heve kjøpet. Det finnes imidlertid unntak fra dette.</p>
+
+    <h4>Opplysninger om kjøretøyets tilstand</h4>
+    <p>Det helt sentrale spørsmålet i saker om heving, både ved kjøp fra forhandler og ved kjøp mellom private, er som regel hvilke opplysninger du fikk om tilstanden da du kjøpte bilen.</p>
+    <p>De fleste kjøretøy selges med et «som den er»-forbehold, som betyr at du overtar kjøretøyet i den tilstanden det faktisk er i. Men selger kan ikke holde tilbake opplysninger om kjøretøyets tilstand, og kan selvsagt ikke gi uriktige opplysninger om den. Da gjelder ikke lenger forbeholdet.</p>
+    <p>Det er kun de manglene selger ikke har kjennskap til, som du overtar risikoen for.</p>
+    <p>Ofte oppstår det tvist om hva man visste eller ikke visste. Ikke sjelden møtes man også med at man har undersøkt kjøretøyet eller hadde oppfordring til det, og derfor måtte være klar over feilen. Så er det et spørsmål om hvor mye man burde ha forstått ut fra en konkret opplysning som er gitt.</p>
+
+    <h4>Kjøper har sterk beskyttelse i loven</h4>
+    <p>Selv om det er mange fallgruver, er det viktig å presisere at kjøper har et sterkt vern i loven. Særlig forbrukervernet er sterkt. Forbruker er du hvis du har kjøpt fra en forhandler. En forbruker kan heve hvis kjøretøyet har en mangel som ikke er «uvesentlig».</p>
+    <p>Har du kjøpt fra en privatperson, er kravet at mangelen må være «vesentlig».</p>
+    <p>For forbrukere er tommelfingerregelen at man kan kreve heving hvis mangelen utgjør cirka 20 % av kjøpesummen.</p>
+    <p>Vær også klar over at selv om terskelen for å heve ikke er nådd, kan du ha krav på et betydelig prisavslag.</p>
+
+    <h4>Hva skjer hvis kjøpet heves?</h4>
+    <p>Ved heving faller partenes plikt til å oppfylle avtalen bort. I praksis leveres kjøretøyet tilbake og kjøpesummen tilbakeføres. Har man hatt vesentlig nytte av kjøretøyet, skal det normalt ytes kompensasjon for dette.</p>
+
+    <h3>Bilforsikring</h3>
+    <p>På bilforsikringen din har du rettshjelpsdekning for advokatutgifter. Har du slik dekning, betaler du normalt bare omkring 20 % av kostnadene i saken. Vi hjelper deg å undersøke om forsikringen din dekker advokatkostnadene.</p>
+    <p>Ta kontakt med oss for å overholde reklamasjonsfristen og fremme krav mot selger.</p>
+
+    <h3>Biladvokat</h3>
+    <p>Vi har erfaring med tvister ved kjøp og salg av kjøretøy, spesielt heving av kjøp. Har du problemer med andre typer motorvogner, er det de samme reglene som gjelder.</p>
+    <p>I avtaler om kjøp og salg av kjøretøy er det enten kjøpsloven eller forbrukerkjøpsloven som gjelder, avhengig av hvem som er kjøper og selger. Forbrukerkjøpsloven gir kjøper bedre rettigheter enn kjøpsloven.</p>
+    <p style="margin-top:24px"><button class="btn" type="button" data-open-form>Kontakt meg</button></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Bilsaker.no</strong> er en tjeneste fra <strong>Resolve Partners Advokatfirma</strong> (Solve Advokatfirma AS)</p>
+    <p>Org.nr. [ORG.NR] · [ADRESSE]</p>
+    <p><a href="privacy-policy">Personvernerklæring</a></p>
+  </div>
+</footer>
+
+<div class="modal" id="skjema" role="dialog" aria-modal="true" aria-labelledby="skjema-tittel" hidden>
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Lukk" data-close-form>×</button>
+    <img class="logo" src="assets/resolve-partners.png" width="520" height="120" alt="Resolve Partners Advokatfirma">
+    <div class="progress" aria-hidden="true"><div>Nesten ferdig …</div></div>
+    <h2 id="skjema-tittel"><u>Gratis</u> saksvurdering!</h2>
+    <p class="lead">Trenger du <b>biladvokat</b>? Vi kan hjelpe deg med <b>heving</b> av bilkjøp, <b>reklamasjon</b> og generelle feil og mangler.</p>
+    <div id="skjema-plass"></div>
+    <p class="fine">Helt uforpliktende. Se <a href="privacy-policy">personvernerklæringen</a>.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var FORM_ID = 'pdeADDvwc0rglp79p3u2'; // GoHighLevel-skjema «Myhre AF bilsaker Opt-in» – samme som på den gamle siden
+  var modal = document.getElementById('skjema');
+  var slot = document.getElementById('skjema-plass');
+  var loaded = false, lastFocus = null;
+
+  function loadForm(){
+    if (loaded) return; loaded = true;
+    var f = document.createElement('iframe');
+    f.src = 'https://api.leadconnectorhq.com/widget/form/' + FORM_ID;
+    f.id = 'inline-' + FORM_ID;
+    f.title = 'Kontaktskjema';
+    f.style.cssText = 'width:100%;height:320px;border:none;border-radius:3px';
+    f.setAttribute('data-height', '320');
+    f.setAttribute('data-layout', "{'id':'INLINE'}");
+    f.setAttribute('data-trigger-type', 'alwaysShow');
+    f.setAttribute('data-activation-type', 'alwaysActivated');
+    f.setAttribute('data-deactivation-type', 'neverDeactivate');
+    f.setAttribute('data-form-name', 'Myhre AF bilsaker Opt-in');
+    f.setAttribute('data-layout-iframe-id', 'inline-' + FORM_ID);
+    f.setAttribute('data-form-id', FORM_ID);
+    slot.appendChild(f);
+    var s = document.createElement('script');
+    s.src = 'https://link.msgsndr.com/js/form_embed.js';
+    s.async = true;
+    document.body.appendChild(s);
+  }
+  function open(){
+    lastFocus = document.activeElement;
+    loadForm();
+    modal.hidden = false; modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('[data-close-form]').focus();
+  }
+  function close(){
+    modal.classList.remove('open'); modal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-open-form]').forEach(function(b){ b.addEventListener('click', open); });
+  modal.querySelector('[data-close-form]').addEventListener('click', close);
+  modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !modal.hidden) close(); });
+
+  // Som på den gamle siden: skjemaet åpnes automatisk etter 2 sekunder.
+  // Sett AUTO_OPEN = false for å slå det av.
+  var AUTO_OPEN = true;
+  if (AUTO_OPEN) setTimeout(function(){ if (modal.hidden) open(); }, 2000);
+})();
+</script>
+</body>
+</html>
