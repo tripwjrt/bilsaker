@@ -343,7 +343,8 @@
       else p.setAttribute('style','height:0;padding:0;opacity:0;');
     });
   });
-  // Som footer-koden i GHL: skjemaet åpnes 2 sekunder etter at siden er lastet
-  window.addEventListener('load', function(){ setTimeout(open, 2000); });
+  // Merk: GHL-siden har footer-kode som skal åpne skjemaet etter 2 s, men den klikker på
+  // en <div> og ikke selve knappen, så popupen åpnes aldri automatisk på dagens side.
+  // Kopien gjør det samme: ingen auto-åpning.
 })();
 </script></body></html>
