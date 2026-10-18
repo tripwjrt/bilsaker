@@ -24,17 +24,19 @@
     }
   }
 
+  // Kompakt stripe nederst, slik at «Kontakt meg»-knappen ikke dekkes på mobil.
   var css = '' +
     '#samtykke{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#fff;color:#111827;' +
-    'box-shadow:0 -4px 24px rgba(0,0,0,.18);font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.45;}' +
-    '#samtykke .s-inner{max-width:960px;margin:0 auto;padding:14px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;}' +
-    '#samtykke p{margin:0;flex:1 1 320px;}' +
+    'box-shadow:0 -2px 12px rgba(0,0,0,.15);font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.35;}' +
+    '#samtykke .s-inner{max-width:960px;margin:0 auto;padding:8px 12px;display:flex;gap:10px;align-items:center;}' +
+    '#samtykke p{margin:0;flex:1 1 auto;}' +
     '#samtykke a{color:#188bf6;}' +
-    '#samtykke .s-knapper{display:flex;gap:10px;flex:0 0 auto;}' +
-    '#samtykke button{font:bold 15px Arial,Helvetica,sans-serif;min-width:110px;height:44px;padding:0 18px;border-radius:4px;cursor:pointer;}' +
+    '#samtykke .s-knapper{display:flex;gap:8px;flex:0 0 auto;}' +
+    '#samtykke button{font:bold 13px Arial,Helvetica,sans-serif;min-width:72px;height:34px;padding:0 12px;border-radius:4px;cursor:pointer;}' +
     '#samtykke .s-nei{background:#fff;color:#188bf6;border:2px solid #188bf6;}' +
     '#samtykke .s-ja{background:#188bf6;color:#fff;border:2px solid #188bf6;}' +
-    '@media (max-width:480px){#samtykke .s-knapper{width:100%;}#samtykke button{flex:1;}}';
+    '@media (max-width:480px){#samtykke{font-size:12px;}#samtykke .s-inner{padding:6px 10px;gap:8px;}' +
+    '#samtykke button{min-width:62px;height:32px;padding:0 8px;font-size:12.5px;}}';
 
   function visBanner() {
     if (document.getElementById('samtykke')) return;
@@ -45,8 +47,7 @@
     d.setAttribute('aria-label', 'Informasjonskapsler');
     d.innerHTML =
       '<div class="s-inner">' +
-      '<p>Vi bruker informasjonskapsler fra Google for å måle hvordan annonsene våre fungerer. ' +
-      'Les mer i <a href="privacy-policy">personvernerklæringen</a>.</p>' +
+      '<p>Vi bruker informasjonskapsler for å måle annonsene. <a href="privacy-policy">Les mer</a></p>' +
       '<div class="s-knapper">' +
       '<button type="button" class="s-nei">Avslå</button>' +
       '<button type="button" class="s-ja">Godta</button>' +
