@@ -48,6 +48,25 @@
         }
       } catch (err) {}
     }, true);
+
+    // Når besøket forlates: hvor lenge (sekunder) og hvor langt ned på siden (prosent).
+    var t0 = Date.now(), maxScroll = 0, forlatt = false;
+    var maal = function () {
+      try {
+        var h = document.documentElement;
+        var p = Math.round(100 * (window.scrollY + window.innerHeight) / Math.max(1, h.scrollHeight));
+        if (p > maxScroll) maxScroll = Math.min(100, p);
+      } catch (err) {}
+    };
+    maal();
+    window.addEventListener('scroll', maal, { passive: true });
+    var forlat = function () {
+      if (forlatt) return;
+      forlatt = true;
+      logg('forlot', Math.round((Date.now() - t0) / 1000) + 's|' + maxScroll + '%');
+    };
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') forlat(); });
+    window.addEventListener('pagehide', forlat);
   } catch (e) {}
 })();
 
