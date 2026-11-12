@@ -63,7 +63,10 @@
     if (a) { e.preventDefault(); visBanner(); }
   });
 
-  if (lesValg() === null) {
+  // 12.11.2026: banneret vises ikke på mobil. Samtykket står da som «avslått» (standard),
+  // så Google-taggen setter ingen informasjonskapsler for disse besøkende.
+  var MOBIL = window.innerWidth < 768;
+  if (lesValg() === null && !MOBIL) {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', visBanner);
     else visBanner();
   }
