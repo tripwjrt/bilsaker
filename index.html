@@ -351,6 +351,16 @@
   document.querySelectorAll('.c-button button').forEach(function(b){ b.addEventListener('click', open); });
   popup.querySelector('.closeLPModal').addEventListener('click', close);
   overlay.addEventListener('click', function(e){ if(e.target===overlay) close(); });
+  // 12.11.2026: skjemaet åpnes automatisk på mobil etter 3 s, én gang per økt (som footer-koden på GHL-siden).
+  if(window.innerWidth < 768){
+    var vist=false; try{ vist=sessionStorage.getItem('bil_auto_popup')==='1'; }catch(e){}
+    var aapnet=false; document.querySelectorAll('.c-button button').forEach(function(b){ b.addEventListener('click', function(){ aapnet=true; }); });
+    if(!vist){ setTimeout(function(){
+      if(aapnet || popup.classList.contains('show')) return;
+      try{ sessionStorage.setItem('bil_auto_popup','1'); }catch(e){}
+      open(); try{ if(window.__trakt) window.__trakt('popup_auto'); }catch(e){}
+    }, 3000); }
+  }
   document.querySelectorAll('.hl-faq-child').forEach(function(c){
     var p=c.querySelector('.hl-faq-child-panel');
     c.querySelector('.hl-faq-child-heading').addEventListener('click', function(){
