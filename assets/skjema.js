@@ -26,7 +26,7 @@
     };
     window.__trakt = logg;
 
-    logg('sidevisning');
+    logg('sidevisning', location.pathname);
 
     document.addEventListener('click', function (e) {
       try {
