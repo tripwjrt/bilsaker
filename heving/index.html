@@ -94,6 +94,12 @@ section{padding:60px 0}
 .faq details[open] summary::after{content:"–"}
 .faq details p{margin:0 0 18px;color:var(--muted)}
 .final{text-align:center}
+.final .haster{font-size:14px;opacity:.75;margin-top:-12px}
+.nudge{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:22px;padding:18px 22px;background:var(--navy);color:var(--cream);border-radius:3px}
+.nudge p{margin:0;font-size:16px}
+.nudge .btn{background:var(--gold);color:var(--navy);padding:14px 26px;white-space:nowrap}
+.tile h3{margin-top:2px}
+.lawyer blockquote+blockquote{margin-top:14px}
 .final h2{font-size:40px;margin:10px 0 8px}
 .final p{margin:0 auto 22px;opacity:.8}
 .final .eyebrow{justify-content:center}
@@ -118,6 +124,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-betw
   .costrow{grid-template-columns:1fr;gap:18px}.costrow .big{font-size:34px}
   .final h2{font-size:30px}
   .top .rating .txt{display:none}
+  .nudge{flex-direction:column;align-items:stretch;text-align:left}.nudge .btn{width:100%}
+  .grid3{grid-template-columns:1fr}
 }
 @media (min-width:900px){.sticky{display:none!important}}
 
@@ -197,33 +205,34 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
     <div class="item"><div class="num">ca. 80 %</div><div class="lbl">dekkes av forsikring</div></div>
   </div></div>
 <section class="s-rules"><div class="wrap">
-    <div class="head"><div class="eyebrow">Dine rettigheter</div><h2>Når kan du <em>heve</em>?</h2></div>
+    <div class="head"><h2>Kjenner du deg <em>igjen?</em></h2></div>
     <div class="grid4">
-      <div class="tile"><div class="ic">1</div><h3>Vesentlig feil</h3><p>Ca. 20 % av kjøpesummen er tommelfingerregelen.</p></div>
-      <div class="tile"><div class="ic">2</div><h3>Reklamer i tide</h3><p>Innen rimelig tid etter at du oppdaget feilen.</p></div>
-      <div class="tile"><div class="ic">3</div><h3>Kjøpt av forhandler?</h3><p>Da har du sterkere rettigheter.</p></div>
-      <div class="tile"><div class="ic">4</div><h3>Ikke heving?</h3><p>Du kan ha krav på prisavslag eller erstatning.</p></div>
+      <div class="tile"><h3>Feil etter kjøpet</h3><p>Motor, girkasse, elektronikk eller rust som burde vært opplyst om.</p></div>
+      <div class="tile"><h3>Store verkstedregninger</h3><p>Du betaler for reparasjoner på en bil du nettopp kjøpte.</p></div>
+      <div class="tile"><h3>Kilometerstanden stemmer ikke</h3><p>Bilen har gått lenger enn det som ble oppgitt.</p></div>
+      <div class="tile"><h3>Selger avviser klagen</h3><p>Du har tatt det opp, men kommer ingen vei.</p></div>
     </div>
+    <div class="nudge"><p>Usikker på om det holder til heving? Det er nettopp det vi vurderer – gratis og uforpliktende.</p><div class="c-button"><button type="button" class="btn" id="cta-situasjon" data-til-skjema>Kontakt meg</button></div></div>
   </div></section>
 <section class="s-steps"><div class="wrap">
-    <div class="head"><div class="eyebrow">Slik fungerer det</div><h2>Tre enkle steg</h2></div>
+    <div class="head"><h2>Tre enkle steg</h2></div>
     <div class="grid3">
       <div class="tile"><div class="ic">1</div><h3>Legg igjen nummer</h3><p>Tar under ett minutt.</p></div>
       <div class="tile"><div class="ic">2</div><h3>Vi ringer deg</h3><p>Gratis vurdering innen 0–24 timer.</p></div>
-      <div class="tile"><div class="ic">3</div><h3>Vi tar saken</h3><p>Forsikringen dekker ofte det meste.</p></div>
+      <div class="tile"><div class="ic">3</div><h3>Vi håndterer resten</h3><p>Har du en sak, tar vi den videre. Forsikringen dekker ofte det meste.</p></div>
     </div>
   </div></section>
 <section class="s-lawyer"><div class="wrap lawyer">
     <div class="photo"><img src="/assets/img/684997695a359c6c4ae90155.webp" alt="Advokat Kristoffer Botilsrud" width="512" height="391"/></div>
     <div>
-      <div class="eyebrow">Din advokat</div>
       <h2>Kristoffer Botilsrud</h2>
       <p class="muted">Rangert blant de 100 beste advokatene i Norge på Advokatguiden. Snitt 5,0 av 5.</p>
-      
+      <blockquote>«Han er dyktig, lett å samarbeide med og følger alltid opp på en god måte.»<cite><span class="stars">★★★★★</span> Klient · Advokatguiden</cite></blockquote>
+      <blockquote>«Tydelig kommunikasjon og et godt resultat. Vi fikk den hjelpen vi trengte da det virkelig gjaldt.»<cite><span class="stars">★★★★★</span> Klient · Advokatguiden</cite></blockquote>
     </div>
   </div></section>
 <section class="s-cost"><div class="wrap">
-    <div class="head" style="margin-left:auto;margin-right:auto;text-align:center"><div class="eyebrow" style="justify-content:center">Hva koster det?</div><h2>Forsikringen dekker <em>det meste</em></h2></div>
+    <div class="head" style="margin-left:auto;margin-right:auto;text-align:center"><h2>Forsikringen dekker <em>det meste</em></h2></div>
     <div class="costrow">
       <div><div class="big">0 kr</div><p>for vurderingen</p></div>
       <div><div class="big">ca. 80 %</div><p>dekkes ofte av bilforsikringen</p></div>
@@ -231,15 +240,18 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
     </div>
   </div></section>
 <section class="s-faq faq"><div class="wrap" style="max-width:780px">
-    <div class="head"><div class="eyebrow">Spørsmål og svar</div><h2>Ofte stilte spørsmål</h2></div>
+    <div class="head"><h2>Ofte stilte spørsmål</h2></div>
     <details><summary>Hva skjer om kjøpet heves?</summary><p>Bilen leveres tilbake og du får kjøpesummen tilbake. Har du hatt vesentlig nytte av bilen, skal det normalt ytes kompensasjon for dette.</p></details>
+    <details><summary>Hva om selger nekter?</summary><p>Det er ikke uvanlig at selger avviser kravet i første omgang. Vi vurderer hva som kan være neste steg i din sak, og kan ta saken videre for deg.</p></details>
+    <details><summary>Jeg kjøpte bilen privat. Har jeg rettigheter da?</summary><p>Du kan ha rettigheter også ved kjøp fra privatperson. Reglene er strengere enn ved kjøp fra forhandler, og mye avhenger av hva som ble avtalt. Vi ser på saken din og sier hva vi mener.</p></details>
+    <details><summary>Hva om feilen ikke er stor nok til heving?</summary><p>Selv om heving ikke er aktuelt, kan det være grunnlag for prisavslag eller erstatning. Vi vurderer hvilke muligheter du har.</p></details>
     <details><summary>Hvorfor ikke bare gå via Forbrukerrådet?</summary><p>Forbrukerrådet tilbyr kun mekling, ikke bistand, og er mindre egnet når store summer står på spill. Gjør du feil underveis, kan løpet være kjørt.</p></details>
     <details><summary>Hvor raskt kommer vi i gang?</summary><p>Vi ringer deg innen 0–24 timer, gir en vurdering av saken og kommer i gang så fort som mulig.</p></details>
   </div></section>
 <section class="final s-final"><div class="wrap">
-    <div class="eyebrow">Gratis vurdering</div>
-    <h2>Finn ut om du kan heve kjøpet</h2>
-    <p>Vi ringer deg innen 0–24 timer.</p>
+    <h2>Usikker på om du har en sak?</h2>
+    <p>Det er de fleste. Legg igjen nummeret ditt, så ringer vi deg innen 0–24 timer – gratis og uforpliktende.</p>
+    <p class="haster">Jo lenger du venter, desto vanskeligere kan det bli å dokumentere feilene.</p>
     <div class="c-button"><button type="button" class="btn" id="cta-slutt" data-til-skjema>Kontakt meg</button></div>
   </div></section>
 </main>
