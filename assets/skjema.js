@@ -83,7 +83,7 @@
   var site = form.getAttribute('data-site') || location.hostname.replace(/^www\./, '');
 
   // Husk annonseparametere fra første side i økten (gclid, utm_*), også om de forsvinner fra adressen.
-  var KEYS = ['gclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  var KEYS = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
   var sporing = {};
   try { sporing = JSON.parse(sessionStorage.getItem('lead_sporing') || '{}') || {}; } catch (e) {}
   var qs = new URLSearchParams(location.search);
@@ -158,7 +158,10 @@
     }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       trakt('innsendt');
-      location.href = TAKK;
+      // Klikk-ID videre til takkesiden, så Google Ads kan koble leadet til annonseklikket (også på iPhone og uten samtykke).
+      var ids = new URLSearchParams();
+      ['gclid', 'gbraid', 'wbraid'].forEach(function (k) { if (sporing[k]) ids.set(k, sporing[k]); });
+      location.href = TAKK + (ids.toString() ? '?' + ids.toString() : '');
     }).catch(function (err) {
       trakt('feil', String(err && err.message || err).slice(0, 40));
       sender = false;
