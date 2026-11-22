@@ -178,7 +178,9 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
 #lead-skjema button:hover,.sticky button:hover{filter:brightness(1.06);transform:translateY(-1px)}
 #lead-skjema button:active,.sticky button:active{transform:translateY(3px);box-shadow:0 1px 0 #8a6d43,0 4px 10px rgba(0,0,0,.25)}
 .nudge .btn,.final .btn{border-radius:6px;box-shadow:0 4px 0 rgba(0,0,0,.28),0 8px 18px rgba(0,0,0,.18)}
-.card h2{margin:0 0 14px}
+.card h2{margin:0 0 16px;color:#fff;font-size:30px}
+.hero h1{margin-bottom:24px}
+@media (max-width:899px){.card h2{font-size:26px}.hero h1{margin-bottom:18px}}
 </style>
 </head>
 <body>
@@ -189,9 +191,9 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
 <main>
 <div class="hero">
     <div class="left">
-      <h1>Få en <em>biladvokat</em> på din side</h1>
-      <p class="lead">Få gratis saksvurdering av en advokat.</p>
+      <h1>Trenger du en <em>biladvokat?</em></h1>
       <div class="card" id="skjema">
+      <h2>Få gratis saksvurdering</h2>
       <form id="lead-skjema" class="ls" data-site="bilsaker.no" novalidate>
         <input class="ls-felt" name="navn" type="text" autocomplete="name" placeholder="Fullt navn*" aria-label="Fullt navn" required/>
         <div class="ls-felt ls-tlf"><svg class="ls-flagg" viewBox="0 0 22 16" aria-hidden="true"><rect width="22" height="16" fill="#ba0c2f"/><path d="M6 0h4v16H6zM0 6h22v4H0z" fill="#fff"/><path d="M7 0h2v16H7zM0 7h22v2H0z" fill="#00205b"/></svg><input name="tlf" type="tel" inputmode="tel" autocomplete="tel" placeholder="Telefonnummer*" aria-label="Telefonnummer" required/></div>
