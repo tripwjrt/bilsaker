@@ -172,6 +172,13 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
   .card{padding:18px 16px 14px;max-width:none}.card h2{font-size:24px}
   .trust .item+.item{border-left:0}.trust .item:nth-child(2n){border-left:1px solid var(--line)}
 }
+/* tydelig knapp (forside) */
+#lead-skjema button,.sticky button{background:linear-gradient(180deg,#d9c193 0%,#c2a46e 100%);color:var(--navy);border-radius:6px;box-shadow:0 4px 0 #8a6d43,0 10px 22px rgba(0,0,0,.28);font-size:18px;transition:transform .08s ease,box-shadow .08s ease,filter .15s ease;margin-bottom:4px}
+#lead-skjema button::after,.sticky button::after{content:"\2192";margin-left:10px;font-weight:700}
+#lead-skjema button:hover,.sticky button:hover{filter:brightness(1.06);transform:translateY(-1px)}
+#lead-skjema button:active,.sticky button:active{transform:translateY(3px);box-shadow:0 1px 0 #8a6d43,0 4px 10px rgba(0,0,0,.25)}
+.nudge .btn,.final .btn{border-radius:6px;box-shadow:0 4px 0 rgba(0,0,0,.28),0 8px 18px rgba(0,0,0,.18)}
+.card h2{margin:0 0 14px}
 </style>
 </head>
 <body>
@@ -186,7 +193,6 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
       <p class="lead">Få gratis saksvurdering av en advokat.</p>
       <div class="card" id="skjema">
       <h2>Vi kontakter deg</h2>
-      <p class="sub">Legg igjen navn og nummer – det tar under ett minutt.</p>
       <form id="lead-skjema" class="ls" data-site="bilsaker.no" novalidate>
         <input class="ls-felt" name="navn" type="text" autocomplete="name" placeholder="Fullt navn*" aria-label="Fullt navn" required/>
         <div class="ls-felt ls-tlf"><svg class="ls-flagg" viewBox="0 0 22 16" aria-hidden="true"><rect width="22" height="16" fill="#ba0c2f"/><path d="M6 0h4v16H6zM0 6h22v4H0z" fill="#fff"/><path d="M7 0h2v16H7zM0 7h22v2H0z" fill="#00205b"/></svg><input name="tlf" type="tel" inputmode="tel" autocomplete="tel" placeholder="Telefonnummer*" aria-label="Telefonnummer" required/></div>
@@ -242,7 +248,7 @@ footer{background:var(--navy);color:rgba(247,246,242,.7)}
   </div></section>
 <section class="s-faq faq" id="sporsmal"><div class="wrap" style="max-width:780px">
     <div class="head"><h2>Ofte stilte spørsmål</h2></div>
-    <details><summary>Hva koster en biladvokat?</summary><p>Vurderingen er gratis. Går vi videre med saken, dekker rettshjelpen i bilforsikringen ofte store deler av advokatutgiftene, og du betaler normalt en egenandel selv. Vi ser på hva forsikringen din dekker.</p></details>
+    <details><summary>Hva koster en biladvokat?</summary><p>Vurderingen er gratis. Går vi videre med saken, dekker rettshjelpen i bilforsikringen ofte store deler av advokatutgiftene, og du betaler normalt en grunnandel selv. Vi ser på hva forsikringen din dekker.</p></details>
     <details><summary>Hvilke saker hjelper dere med?</summary><p>Vi hjelper bileiere med heving av bilkjøp, reklamasjon, prisavslag og erstatning når bilen har feil eller mangler – både ved kjøp fra forhandler og fra privatperson.</p></details>
     <details><summary>Hvor lenge kan jeg reklamere?</summary><p>Ved kjøp fra forhandler, også av bruktbil, er fristen som regel to år, og for en bil kan den i mange tilfeller være fem år. Ved kjøp fra privatperson er den normalt to år. Uansett må du si fra innen rimelig tid etter at du oppdaget feilen. Vi ser på hvilke frister som gjelder i din sak.</p></details>
         <details><summary>Hva om selger nekter?</summary><p>Det er ikke uvanlig at selger avviser kravet i første omgang. Vi vurderer hva som kan være neste steg i din sak, og kan ta saken videre for deg.</p></details>
